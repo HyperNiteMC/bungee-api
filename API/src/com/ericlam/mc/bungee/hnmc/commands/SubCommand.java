@@ -11,6 +11,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@Deprecated
 public abstract class SubCommand {
 
     private Plugin plugin;

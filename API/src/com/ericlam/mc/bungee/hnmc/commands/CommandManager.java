@@ -11,6 +11,7 @@ import java.util.Set;
  * 指令管理器
  */
 
+@Deprecated
 public interface CommandManager {
 
     /**

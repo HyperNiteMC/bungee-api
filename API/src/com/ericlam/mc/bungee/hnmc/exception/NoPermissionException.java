@@ -4,6 +4,10 @@ import com.ericlam.mc.bungee.hnmc.commands.SubCommand;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.main.HyperNiteMC;
 
+/**
+ * @see com.ericlam.mc.bungee.hnmc.commands.caxerx.exception.CommandPermissionException
+ */
+@Deprecated
 public class NoPermissionException extends Exception {
 
     private String[] permissions;

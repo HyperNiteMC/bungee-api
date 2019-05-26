@@ -3,6 +3,7 @@ package com.ericlam.mc.bungee.hnmc.commands;
 
 import net.md_5.bungee.api.plugin.Plugin;
 
+@Deprecated
 public class MainCommand {
     private String command;
     private Plugin plugin;

@@ -10,6 +10,7 @@ import net.md_5.bungee.api.plugin.Plugin;
 /**
  * 指令處理器
  */
+@Deprecated
 public interface CommandHandle {
 
     /**
