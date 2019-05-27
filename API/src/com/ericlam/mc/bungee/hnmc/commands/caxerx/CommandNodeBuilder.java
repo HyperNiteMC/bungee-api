@@ -116,5 +116,30 @@ public class CommandNodeBuilder {
         };
     }
 
-
 }
+//如何使用
+/*
+class CommandNodeUse{
+    CommandNode getNode(){
+        return new CommandNodeBuilder("hello")
+                .description("向一個人 say hello")
+                .parent(null)
+                .placeholder("<player>")
+                .tabComplete((sender, args) -> null)
+                .permission("say.hello").execute((sender, args) -> {
+                    String name = args.get(0);
+                    ProxiedPlayer target = ProxyServer.getInstance().getPlayer(name);
+                    if (target == null){
+                        MessageBuilder.sendMessage(sender,"對方不在線!");
+                        return;
+                    }
+                    MessageBuilder.sendMessage(sender,"已向 "+name+" say hello !");
+                    MessageBuilder.sendMessage(target,sender.getName()+" 向你 say hello 了!");
+                }).build();
+    }
+}
+
+ */
+
+
+

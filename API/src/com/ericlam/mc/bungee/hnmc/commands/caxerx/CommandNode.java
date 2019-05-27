@@ -130,7 +130,7 @@ public abstract class CommandNode {
                 if (subCommand.getPlaceholder() != null) {
                     String[] placeholders = Arrays.stream(subCommand.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
                     if (passArg.size() < placeholders.length) {
-                        throw new CommandArgumentException(subCommand.getPlaceholder());
+                        throw new CommandArgumentException(String.join(" ", placeholders));
                     }
                 }
 
