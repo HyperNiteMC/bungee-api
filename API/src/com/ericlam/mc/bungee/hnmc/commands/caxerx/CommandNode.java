@@ -69,6 +69,10 @@ public abstract class CommandNode {
         return parent;
     }
 
+    void setParent(CommandNode node) {
+        this.parent = node;
+    }
+
     public ArrayList<String> getAlias() {
         return alias;
     }

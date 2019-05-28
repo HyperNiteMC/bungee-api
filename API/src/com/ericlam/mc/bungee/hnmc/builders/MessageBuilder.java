@@ -15,6 +15,9 @@ import java.util.UUID;
  */
 public class MessageBuilder {
     private ComponentBuilder componentBuilder;
+    private UUID id;
+    private ChatRunner runner;
+    private int timeoutSeconds = 0;
 
     /**
      *
@@ -166,9 +169,8 @@ public class MessageBuilder {
      * @return this
      */
     public MessageBuilder run(ChatRunner runner) {
-        UUID id = UUID.randomUUID();
-        this.command("/command-run_" + id.toString());
-        HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner);
+        this.id = UUID.randomUUID();
+        this.runner = runner;
         return this;
     }
 
@@ -180,9 +182,9 @@ public class MessageBuilder {
      * @return this
      */
     public MessageBuilder run(int timeoutSeconds, ChatRunner runner) {
-        UUID id = UUID.randomUUID();
-        this.command("/command-run_" + id.toString());
-        HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner, timeoutSeconds);
+        this.id = UUID.randomUUID();
+        this.runner = runner;
+        this.timeoutSeconds = timeoutSeconds;
         return this;
     }
 
@@ -191,6 +193,14 @@ public class MessageBuilder {
      * @return 訊息
      */
     public BaseComponent[] build() {
+        if (this.runner != null) {
+            this.command("/command-run_" + id.toString());
+            if (timeoutSeconds > 0) {
+                HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner, timeoutSeconds);
+            } else {
+                HyperNiteMC.getAPI().getChatRunnerManager().register(id, runner);
+            }
+        }
         return componentBuilder.create();
     }
 
@@ -199,7 +209,7 @@ public class MessageBuilder {
      * @param player 玩家
      */
     public void sendPlayer(CommandSender player) {
-        player.sendMessage(componentBuilder.create());
+        player.sendMessage(this.build());
     }
 
 
