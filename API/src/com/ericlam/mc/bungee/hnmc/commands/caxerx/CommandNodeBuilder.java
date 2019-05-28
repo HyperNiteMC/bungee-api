@@ -1,7 +1,6 @@
 package com.ericlam.mc.bungee.hnmc.commands.caxerx;
 
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.exception.NotExecutableException;
-import com.ericlam.mc.bungee.hnmc.commands.caxerx.exception.NotTabCompletableException;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.CmdExecutor;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.TabCompleter;
 import net.md_5.bungee.api.CommandSender;
@@ -98,11 +97,9 @@ public class CommandNodeBuilder {
     /**
      * @return 指令節點
      * @throws NotExecutableException     指令無法執行
-     * @throws NotTabCompletableException 沒有返回 Tab 列
      */
     public CommandNode build() {
         if (cmdExecutor == null) throw new NotExecutableException(command);
-        if (tabCompleter == null) throw new NotTabCompletableException(command);
         return new CommandNode(parent, command, permission, description, placeholder, alias) {
             @Override
             public void executeCommand(CommandSender sender, List<String> args) {
@@ -111,7 +108,7 @@ public class CommandNodeBuilder {
 
             @Override
             public List<String> executeTabCompletion(CommandSender sender, List<String> args) {
-                return tabCompleter.executeTabCompletion(sender, args);
+                return tabCompleter == null ? List.of() : tabCompleter.executeTabCompletion(sender, args);
             }
         };
     }
