@@ -2,7 +2,8 @@ package com.ericlam.mc.bungee.hnmc.commands.caxerx;
 
 import com.ericlam.mc.bungee.hnmc.builders.MessageBuilder;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.exception.NotExecutableException;
-import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.AdvCmdExecution;
+import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.AdvCmdExecutor;
+import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.AdvTabCompleter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.main.HyperNiteMC;
 import net.md_5.bungee.api.CommandSender;
@@ -24,8 +25,8 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
     private String placeholder;
     private CommandNode parent;
     private String[] alias = new String[0];
-    private AdvCmdExecution<List<String>, Sender> tabCompleterSender;
-    private AdvCmdExecution<Boolean, Sender> cmdExecutorSender;
+    private AdvTabCompleter<Sender> tabCompleterSender;
+    private AdvCmdExecutor<Sender> cmdExecutorSender;
 
     /**
      * @param command 指令
@@ -83,11 +84,11 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
     }
 
     /**
-     * @param executor tab 執行
+     * @param tabCompleter tab 執行
      * @return this
      */
-    public AdvCommandNodeBuilder<Sender> tabComplete(AdvCmdExecution<List<String>, Sender> executor) {
-        this.tabCompleterSender = executor;
+    public AdvCommandNodeBuilder<Sender> tabComplete(AdvTabCompleter<Sender> tabCompleter) {
+        this.tabCompleterSender = tabCompleter;
         return this;
     }
 
@@ -95,7 +96,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
      * @param cmdExecutor 指令執行
      * @return this
      */
-    public AdvCommandNodeBuilder<Sender> execute(AdvCmdExecution<Boolean, Sender> cmdExecutor) {
+    public AdvCommandNodeBuilder<Sender> execute(AdvCmdExecutor<Sender> cmdExecutor) {
         this.cmdExecutorSender = cmdExecutor;
         return this;
     }
@@ -121,7 +122,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
             @Override
             public List<String> executeTabCompletion(CommandSender sender, List<String> args) {
                 try {
-                    return tabCompleterSender == null ? null : tabCompleterSender.execute((Sender) sender, args);
+                    return tabCompleterSender == null ? null : tabCompleterSender.tabComplete((Sender) sender, args);
                 } catch (ClassCastException e) {
                     MessageBuilder.sendMessage(sender, config.getPrefix() + config.getNotPlayer());
                 }

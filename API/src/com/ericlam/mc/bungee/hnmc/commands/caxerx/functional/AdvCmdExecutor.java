@@ -9,6 +9,6 @@ import java.util.List;
  * @see CommandNodeBuilder
  */
 @FunctionalInterface
-public interface AdvCmdExecution<T, D extends CommandSender> {
-    T execute(D sender, List<String> args);
+public interface AdvCmdExecutor<D extends CommandSender> {
+    void execute(D sender, List<String> args);
 }
