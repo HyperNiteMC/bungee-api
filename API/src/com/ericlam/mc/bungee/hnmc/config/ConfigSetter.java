@@ -3,10 +3,7 @@ package com.ericlam.mc.bungee.hnmc.config;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public abstract class ConfigSetter {
 
@@ -29,6 +26,18 @@ public abstract class ConfigSetter {
      */
     public abstract void loadConfig(HashMap<String, Configuration> ymls);
 
+    /**
+     * 方便獲取用
+     *
+     * @return 變數列表
+     * @see ConfigManager#getData(String)
+     * @see ConfigManager#getData(String, Class)
+     * @see ConfigManager#getDataList(String, Class)
+     * @see ConfigManager#getDataMap(String, Class, Class)
+     */
+    public Map<String, Object> variablesMap() {
+        return Map.of();
+    }
 
     public List<String> getConfigs() {
         return configs;

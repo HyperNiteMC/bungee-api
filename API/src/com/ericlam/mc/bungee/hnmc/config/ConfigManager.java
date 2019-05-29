@@ -2,6 +2,10 @@ package com.ericlam.mc.bungee.hnmc.config;
 
 import net.md_5.bungee.config.Configuration;
 
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
 /**
  * 指令管理器
  */
@@ -68,4 +72,36 @@ public interface ConfigManager {
      * @return Yml 設置器
      */
     ConfigSetter getConfigSetter();
+
+    /**
+     * @param variable 變數名稱
+     * @return 可能為 null 的變量
+     */
+    Optional<Object> getData(String variable);
+
+    /**
+     * @param variable 變數名稱
+     * @param tClass   變數形態
+     * @param <T>      形態
+     * @return 可能為 null 的變量
+     */
+    <T> Optional<T> getData(String variable, Class<T> tClass);
+
+    /**
+     * @param variable 變數名稱
+     * @param tClass   變數形態
+     * @param <T>      形態
+     * @return List
+     */
+    <T> List<T> getDataList(String variable, Class<T> tClass);
+
+    /**
+     * @param variable   變數名稱
+     * @param keyClass   key 的形態
+     * @param valueClass value 的形態
+     * @param <K>        形態
+     * @param <V>        形態
+     * @return Map
+     */
+    <K, V> Map<K, V> getDataMap(String variable, Class<K> keyClass, Class<V> valueClass);
 }

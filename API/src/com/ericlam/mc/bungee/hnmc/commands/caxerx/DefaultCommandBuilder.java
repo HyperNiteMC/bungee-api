@@ -58,6 +58,7 @@ public class DefaultCommandBuilder {
     }
 
     /**
+     * 若果是主指令，將會自動從 plugin.yml 添加
      * @param alias 縮寫指令
      * @return this
      */

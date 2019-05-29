@@ -14,6 +14,13 @@ import java.util.List;
  */
 public class DefaultCommand extends CommandNode {
 
+    /**
+     * @param parent      父類指令
+     * @param command     指令
+     * @param permission  權限
+     * @param description 介紹
+     * @param alias       縮寫
+     */
     public DefaultCommand(CommandNode parent, String command, String permission, String description, String... alias) {
         super(parent, command, permission, description, null, alias);
     }

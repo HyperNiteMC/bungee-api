@@ -15,6 +15,7 @@ public class Perm {
 
     public static boolean hasPermission(CommandSender sender, String permission) {
         boolean reuslt = false;
+        if (permission == null) return true;
         for (String Pnode : getPermHierarchy(permission)) {
             reuslt = reuslt || sender.hasPermission(Pnode);
         }

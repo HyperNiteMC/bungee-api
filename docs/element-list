@@ -6,12 +6,6 @@ com.ericlam.mc.bungee.hnmc.commands.caxerx
 com.ericlam.mc.bungee.hnmc.commands.caxerx.exception
 com.ericlam.mc.bungee.hnmc.commands.caxerx.functional
 com.ericlam.mc.bungee.hnmc.config
-com.ericlam.mc.bungee.hnmc.containers
 com.ericlam.mc.bungee.hnmc.exception
-com.ericlam.mc.bungee.hnmc.implement
-com.ericlam.mc.bungee.hnmc.implement.caxerx.command
-com.ericlam.mc.bungee.hnmc.implement.command
-com.ericlam.mc.bungee.hnmc.listeners
 com.ericlam.mc.bungee.hnmc.main
-com.ericlam.mc.bungee.hnmc.manager
 com.ericlam.mc.bungee.hnmc.permission
