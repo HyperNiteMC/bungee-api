@@ -6,6 +6,7 @@ import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.AdvCmdExecutor;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.AdvTabCompleter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.main.HyperNiteMC;
+import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 
 import java.util.List;
@@ -115,7 +116,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
                 try {
                     cmdExecutorSender.execute((Sender) sender, args);
                 } catch (ClassCastException e) {
-                    MessageBuilder.sendMessage(sender, config.getPrefix() + config.getNotPlayer());
+                    MessageBuilder.sendMessage(sender, config.getPrefix() + ChatColor.RED + "無法使用此指令。");
                 }
             }
 
@@ -124,7 +125,7 @@ public class AdvCommandNodeBuilder<Sender extends CommandSender> {
                 try {
                     return tabCompleterSender == null ? null : tabCompleterSender.tabComplete((Sender) sender, args);
                 } catch (ClassCastException e) {
-                    MessageBuilder.sendMessage(sender, config.getPrefix() + config.getNotPlayer());
+                    MessageBuilder.sendMessage(sender, config.getPrefix() + ChatColor.RED + "無法使用此指令。");
                 }
                 return null;
             }
