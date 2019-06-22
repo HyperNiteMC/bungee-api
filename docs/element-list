@@ -1,8 +1,6 @@
 com.ericlam.mc.bungee.hnmc
 com.ericlam.mc.bungee.hnmc.builders
 com.ericlam.mc.bungee.hnmc.builders.function
-com.ericlam.mc.bungee.hnmc.builders.sql
-com.ericlam.mc.bungee.hnmc.builders.sql.builder
 com.ericlam.mc.bungee.hnmc.commands
 com.ericlam.mc.bungee.hnmc.commands.caxerx
 com.ericlam.mc.bungee.hnmc.commands.caxerx.exception
