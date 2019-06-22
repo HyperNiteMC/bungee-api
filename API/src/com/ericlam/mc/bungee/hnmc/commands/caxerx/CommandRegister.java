@@ -15,6 +15,6 @@ public interface CommandRegister {
      * @param plugin 插件
      * @param node 主指令
      */
-    void registerCommand(Plugin plugin, DefaultCommand node);
+    void registerCommand(Plugin plugin, CommandNode node);
 
 }

@@ -1,7 +1,7 @@
 package com.ericlam.mc.bungee.hnmc.commands;
 
 
-import com.ericlam.mc.bungee.hnmc.commands.caxerx.DefaultCommand;
+import com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandNode;
 import com.ericlam.mc.bungee.hnmc.exception.ArgTooShortException;
 import com.ericlam.mc.bungee.hnmc.exception.CommandNotFoundException;
 import com.ericlam.mc.bungee.hnmc.exception.NoPermissionException;
@@ -17,7 +17,7 @@ import net.md_5.bungee.api.plugin.TabExecutor;
  * <p>
  * 使用後無需處理指令及自動完成列，只需處理 Exception 即可。
  * <p>
- * <b>已過期。</b> 請使用 {@link com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister#registerCommand(Plugin, DefaultCommand)} 進行主指令註冊
+ * <b>已過期。</b> 請使用 {@link com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister#registerCommand(Plugin, CommandNode)} 進行主指令註冊
  *
  */
 @Deprecated
