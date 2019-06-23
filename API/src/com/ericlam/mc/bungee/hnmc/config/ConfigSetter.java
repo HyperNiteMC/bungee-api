@@ -29,6 +29,12 @@ public abstract class ConfigSetter {
     /**
      * 方便獲取用
      *
+     * <p>
+     *
+     * 現已可 透過 @Extract 取代 此 方法。
+     *
+     * @see Extract
+     *
      * @return 變數列表
      * @see ConfigManager#getData(String)
      * @see ConfigManager#getData(String, Class)

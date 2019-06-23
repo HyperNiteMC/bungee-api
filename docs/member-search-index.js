@@ -43,11 +43,6 @@ memberSearchIndex = [{
     "l": "addSub(CommandNode)",
     "url": "addSub(com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandNode)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "addSubCommand(SubSubCommand)",
-    "url": "addSubCommand(com.ericlam.mc.bungee.hnmc.commands.SubSubCommand)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
     "l": "ADMIN"
@@ -76,11 +71,6 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "alias(String...)",
     "url": "alias(java.lang.String...)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.exception",
-    "c": "ArgTooShortException",
-    "l": "ArgTooShortException(String)",
-    "url": "%3Cinit%3E(java.lang.String)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "AdvMessageBuilder",
@@ -140,11 +130,6 @@ memberSearchIndex = [{
     "l": "CommandNodeBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.exception",
-    "c": "CommandNotFoundException",
-    "l": "CommandNotFoundException(String)",
-    "url": "%3Cinit%3E(java.lang.String)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.exception",
     "c": "CommandPermissionException",
     "l": "CommandPermissionException(String)",
@@ -193,21 +178,6 @@ memberSearchIndex = [{
     "l": "doOther(Calculation)",
     "url": "doOther(com.ericlam.mc.bungee.hnmc.builders.function.Calculation)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "equals(Object)",
-    "url": "equals(java.lang.Object)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "equals(Object)",
-    "url": "equals(java.lang.Object)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "equals(String, Plugin)",
-    "url": "equals(java.lang.String,net.md_5.bungee.api.plugin.Plugin)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "AdvCommandNodeBuilder",
     "l": "execute(AdvCmdExecutor<Sender>)",
@@ -217,16 +187,6 @@ memberSearchIndex = [{
     "c": "CommandNodeBuilder",
     "l": "execute(CmdExecutor)",
     "url": "execute(com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.CmdExecutor)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "execute(CommandSender, String[])",
-    "url": "execute(net.md_5.bungee.api.CommandSender,java.lang.String[])"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "execute(CommandSender, String[])",
-    "url": "execute(net.md_5.bungee.api.CommandSender,java.lang.String[])"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional",
     "c": "AdvCmdExecutor",
@@ -266,24 +226,7 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getAlias()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "getAllSubCommands()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "getAllSubCommands(String, Plugin)",
-    "url": "getAllSubCommands(java.lang.String,net.md_5.bungee.api.plugin.Plugin)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.main",
-    "c": "HyperNiteMC",
-    "l": "getAPI()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getArgs()"
-}, {
+}, {"p": "com.ericlam.mc.bungee.hnmc.main", "c": "HyperNiteMC", "l": "getAPI()"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "getChatRunnerManager()"
@@ -291,10 +234,6 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.main",
     "c": "HyperNiteMC",
     "l": "getChatRunnerManager()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "getCommand()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
@@ -303,22 +242,6 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.exception",
     "c": "NotExecutableException",
     "l": "getCommand()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc",
-    "c": "HyperNiteAPI",
-    "l": "getCommandHandler()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.main",
-    "c": "HyperNiteMC",
-    "l": "getCommandHandler()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc",
-    "c": "HyperNiteAPI",
-    "l": "getCommandManager()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.main",
-    "c": "HyperNiteMC",
-    "l": "getCommandManager()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
@@ -377,19 +300,6 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getDescription()"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getHelpMessages()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getMainCommand()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "getMainCommand(String, Plugin)",
-    "url": "getMainCommand(java.lang.String,net.md_5.bungee.api.plugin.Plugin)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "getMainConfig()"
@@ -408,10 +318,6 @@ memberSearchIndex = [{
     "l": "getMessageList(String, boolean)",
     "url": "getMessageList(java.lang.String,boolean)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getName()"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "MainConfig",
     "l": "getNoPermission()"
@@ -428,38 +334,18 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getParent()"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getParentCommand()"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
     "l": "getPermHierarchy(String)",
     "url": "getPermHierarchy(java.lang.String)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getPermission()"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getPermission()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.exception",
-    "c": "NoPermissionException",
-    "l": "getPermissions()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getPlaceholder()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "getPlugin()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getPlugin()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigSetter",
@@ -486,63 +372,9 @@ memberSearchIndex = [{
     "c": "HyperNiteMC",
     "l": "getSQLDataSource()"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "getSubCommand(String, Plugin, String)",
-    "url": "getSubCommand(java.lang.String,net.md_5.bungee.api.plugin.Plugin,java.lang.String)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getSubCommand(String)",
-    "url": "getSubCommand(java.lang.String)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getSubCommands()"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getSubCommands()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getSubHelpMessages()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getSubHelpMessages(CommandSender)",
-    "url": "getSubHelpMessages(net.md_5.bungee.api.CommandSender)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getSubPermissions()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "getSubSubCommand(String, Plugin, String, int)",
-    "url": "getSubSubCommand(java.lang.String,net.md_5.bungee.api.plugin.Plugin,java.lang.String,int)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getTabList()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "getTabList(CommandSender)",
-    "url": "getTabList(net.md_5.bungee.api.CommandSender)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandHandle",
-    "l": "handle(CommandSender, String[], Command, Plugin)",
-    "url": "handle(net.md_5.bungee.api.CommandSender,java.lang.String[],net.md_5.bungee.api.plugin.Command,net.md_5.bungee.api.plugin.Plugin)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "hashCode()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "hashCode()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
@@ -552,16 +384,6 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
     "l": "HELPER"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "HNMCCommand(Plugin, String, String, String...)",
-    "url": "%3Cinit%3E(net.md_5.bungee.api.plugin.Plugin,java.lang.String,java.lang.String,java.lang.String...)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "HNMCCommand(String, Plugin)",
-    "url": "%3Cinit%3E(java.lang.String,net.md_5.bungee.api.plugin.Plugin)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
@@ -593,11 +415,6 @@ memberSearchIndex = [{
     "l": "loadConfig(HashMap<String, Configuration>)",
     "url": "loadConfig(java.util.HashMap)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "MainCommand",
-    "l": "MainCommand(String, Plugin)",
-    "url": "%3Cinit%3E(java.lang.String,net.md_5.bungee.api.plugin.Plugin)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "match(String)",
@@ -626,6 +443,10 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "multiply(double)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "Extract",
+    "l": "name()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "AdvMessageBuilder",
     "l": "nextLine()"
@@ -634,40 +455,10 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "nextLine()"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.exception",
-    "c": "NoPermissionException",
-    "l": "NoPermissionException(String)",
-    "url": "%3Cinit%3E(java.lang.String)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.exception",
-    "c": "NoPermissionException",
-    "l": "NoPermissionException(SubCommand)",
-    "url": "%3Cinit%3E(com.ericlam.mc.bungee.hnmc.commands.SubCommand)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.exception",
     "c": "NotExecutableException",
     "l": "NotExecutableException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "onArgTooShort(CommandSender, ArgTooShortException)",
-    "url": "onArgTooShort(net.md_5.bungee.api.CommandSender,com.ericlam.mc.bungee.hnmc.exception.ArgTooShortException)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "onCommandNotFound(CommandSender, CommandNotFoundException)",
-    "url": "onCommandNotFound(net.md_5.bungee.api.CommandSender,com.ericlam.mc.bungee.hnmc.exception.CommandNotFoundException)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "onNoPermission(CommandSender, NoPermissionException)",
-    "url": "onNoPermission(net.md_5.bungee.api.CommandSender,com.ericlam.mc.bungee.hnmc.exception.NoPermissionException)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "HNMCCommand",
-    "l": "onTabComplete(CommandSender, String[])",
-    "url": "onTabComplete(net.md_5.bungee.api.CommandSender,java.lang.String[])"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
@@ -737,16 +528,6 @@ memberSearchIndex = [{
     "l": "registerCommand(Plugin, CommandNode)",
     "url": "registerCommand(net.md_5.bungee.api.plugin.Plugin,com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandNode)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "registerCommand(SubCommand, SubSubCommand...)",
-    "url": "registerCommand(com.ericlam.mc.bungee.hnmc.commands.SubCommand,com.ericlam.mc.bungee.hnmc.commands.SubSubCommand...)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandManager",
-    "l": "registerCommand(SubCommand)",
-    "url": "registerCommand(com.ericlam.mc.bungee.hnmc.commands.SubCommand)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "registerConfig(ConfigSetter)",
@@ -797,10 +578,6 @@ memberSearchIndex = [{
     "l": "run(ProxiedPlayer)",
     "url": "run(net.md_5.bungee.api.connection.ProxiedPlayer)"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "runAsync()"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
     "l": "runClicks(int, ChatRunner)",
@@ -845,21 +622,6 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "sqrt()"
 }, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubCommand",
-    "l": "SubCommand(Plugin)",
-    "url": "%3Cinit%3E(net.md_5.bungee.api.plugin.Plugin)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubSubCommand",
-    "l": "SubSubCommand()",
-    "url": "%3Cinit%3E()"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "SubSubCommand",
-    "l": "SubSubCommand(Plugin)",
-    "url": "%3Cinit%3E(net.md_5.bungee.api.plugin.Plugin)"
-}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
     "l": "suggest(String)",
@@ -879,11 +641,6 @@ memberSearchIndex = [{
     "c": "CommandNodeBuilder",
     "l": "tabComplete(TabCompleter)",
     "url": "tabComplete(com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.TabCompleter)"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.commands",
-    "c": "CommandHandle",
-    "l": "tapComplete(CommandSender, Command, String[], Plugin)",
-    "url": "tapComplete(net.md_5.bungee.api.CommandSender,net.md_5.bungee.api.plugin.Command,java.lang.String[],net.md_5.bungee.api.plugin.Plugin)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
