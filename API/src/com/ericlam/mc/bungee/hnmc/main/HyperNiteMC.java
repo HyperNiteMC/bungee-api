@@ -7,6 +7,7 @@ import com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister;
 import com.ericlam.mc.bungee.hnmc.config.ConfigManager;
 import com.ericlam.mc.bungee.hnmc.config.ConfigSetter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
+import com.ericlam.mc.bungee.hnmc.managers.PlayerManager;
 
 /**
  * 從這裏獲取所有 API
@@ -34,6 +35,11 @@ public class HyperNiteMC implements HyperNiteAPI {
 
     @Override
     public MainConfig getMainConfig() {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
+
+    @Override
+    public PlayerManager getPlayerManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 

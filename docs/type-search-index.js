@@ -61,7 +61,10 @@ typeSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.exception",
     "l": "NotExecutableException"
-}, {"p": "com.ericlam.mc.bungee.hnmc.permission", "l": "Perm"}, {
+}, {"p": "com.ericlam.mc.bungee.hnmc.container", "l": "OfflinePlayer"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.permission",
+    "l": "Perm"
+}, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "PlayerManager"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "l": "SQLDataSource"
 }, {"p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional", "l": "TabCompleter"}]

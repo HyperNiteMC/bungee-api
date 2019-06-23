@@ -318,6 +318,10 @@ memberSearchIndex = [{
     "l": "getMessageList(String, boolean)",
     "url": "getMessageList(java.lang.String,boolean)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "getName()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "MainConfig",
     "l": "getNoPermission()"
@@ -329,6 +333,16 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "MainConfig",
     "l": "getNotPlayer()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "PlayerManager",
+    "l": "getOfflinePlayer(String)",
+    "url": "getOfflinePlayer(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "PlayerManager",
+    "l": "getOfflinePlayer(UUID)",
+    "url": "getOfflinePlayer(java.util.UUID)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
@@ -346,6 +360,14 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getPlaceholder()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc",
+    "c": "HyperNiteAPI",
+    "l": "getPlayerManager()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.main",
+    "c": "HyperNiteMC",
+    "l": "getPlayerManager()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigSetter",
@@ -375,6 +397,10 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getSubCommands()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "getUniqueId()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
@@ -409,6 +435,18 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "invokeTabCompletion(CommandSender, List<String>)",
     "url": "invokeTabCompletion(net.md_5.bungee.api.CommandSender,java.util.List)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "isOnline()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "isPremium()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "lastLogin()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigSetter",
