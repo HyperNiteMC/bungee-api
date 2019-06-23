@@ -108,7 +108,7 @@ public class CommandNodeBuilder {
 
             @Override
             public List<String> executeTabCompletion(CommandSender sender, List<String> args) {
-                return tabCompleter == null ? List.of() : tabCompleter.executeTabCompletion(sender, args);
+                return tabCompleter == null ? null : tabCompleter.executeTabCompletion(sender, args);
             }
         };
     }
