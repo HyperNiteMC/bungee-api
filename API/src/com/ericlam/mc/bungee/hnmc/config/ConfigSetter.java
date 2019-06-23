@@ -36,10 +36,6 @@ public abstract class ConfigSetter {
      * @see Extract
      *
      * @return 變數列表
-     * @see ConfigManager#getData(String)
-     * @see ConfigManager#getData(String, Class)
-     * @see ConfigManager#getDataList(String, Class)
-     * @see ConfigManager#getDataMap(String, Class, Class)
      */
     public Map<String, Object> variablesMap() {
         return Map.of();
