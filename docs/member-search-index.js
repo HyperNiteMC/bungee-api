@@ -361,6 +361,10 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getPlaceholder()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "OfflinePlayer",
+    "l": "getPlayer()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "getPlayerManager()"

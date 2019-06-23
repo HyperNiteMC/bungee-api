@@ -1,5 +1,7 @@
 package com.ericlam.mc.bungee.hnmc.container;
 
+import net.md_5.bungee.api.connection.ProxiedPlayer;
+
 import java.util.UUID;
 
 public interface OfflinePlayer {
@@ -27,5 +29,11 @@ public interface OfflinePlayer {
      * @return 在線
      */
     boolean isOnline();
+
+
+    /**
+     * @return 在線玩家
+     */
+    ProxiedPlayer getPlayer();
 
 }
