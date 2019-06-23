@@ -688,4 +688,4 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
-}, {"p": "com.ericlam.mc.bungee.hnmc.config", "c": "ConfigSetter", "l": "variablesMap()"}]
+}]
