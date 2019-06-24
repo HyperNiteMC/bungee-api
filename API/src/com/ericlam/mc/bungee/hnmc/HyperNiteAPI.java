@@ -5,6 +5,7 @@ import com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister;
 import com.ericlam.mc.bungee.hnmc.config.ConfigManager;
 import com.ericlam.mc.bungee.hnmc.config.ConfigSetter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
+import com.ericlam.mc.bungee.hnmc.managers.ChatFormatManager;
 import com.ericlam.mc.bungee.hnmc.managers.PlayerManager;
 
 import java.io.IOException;
@@ -21,6 +22,8 @@ public interface HyperNiteAPI {
     CommandRegister getCommandRegister();
 
     MainConfig getMainConfig();
+
+    ChatFormatManager getChatFormatManager();
 
     PlayerManager getPlayerManager();
 

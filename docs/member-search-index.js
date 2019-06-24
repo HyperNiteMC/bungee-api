@@ -229,6 +229,14 @@ memberSearchIndex = [{
 }, {"p": "com.ericlam.mc.bungee.hnmc.main", "c": "HyperNiteMC", "l": "getAPI()"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
+    "l": "getChatFormatManager()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.main",
+    "c": "HyperNiteMC",
+    "l": "getChatFormatManager()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc",
+    "c": "HyperNiteAPI",
     "l": "getChatRunnerManager()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.main",
@@ -334,6 +342,10 @@ memberSearchIndex = [{
     "c": "MainConfig",
     "l": "getNotPlayer()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.events",
+    "c": "PlayerVerifyCompletedEvent",
+    "l": "getOfflinePlayer()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.managers",
     "c": "PlayerManager",
     "l": "getOfflinePlayer(String)",
@@ -381,6 +393,16 @@ memberSearchIndex = [{
     "c": "MainConfig",
     "l": "getPrefix()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "ChatFormatManager",
+    "l": "getPrefix(ProxiedPlayer)",
+    "url": "getPrefix(net.md_5.bungee.api.connection.ProxiedPlayer)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "ChatFormatManager",
+    "l": "getPrefixSuffix(ProxiedPlayer)",
+    "url": "getPrefixSuffix(net.md_5.bungee.api.connection.ProxiedPlayer)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigManager",
     "l": "getPureMessage(String)",
@@ -401,6 +423,11 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getSubCommands()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "ChatFormatManager",
+    "l": "getSuffix(ProxiedPlayer)",
+    "url": "getSuffix(net.md_5.bungee.api.connection.ProxiedPlayer)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.container",
     "c": "OfflinePlayer",
@@ -555,6 +582,11 @@ memberSearchIndex = [{
     "c": "CommandNodeBuilder",
     "l": "placeholder(String)",
     "url": "placeholder(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.events",
+    "c": "PlayerVerifyCompletedEvent",
+    "l": "PlayerVerifyCompletedEvent(OfflinePlayer)",
+    "url": "%3Cinit%3E(com.ericlam.mc.bungee.hnmc.container.OfflinePlayer)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",

@@ -13,9 +13,9 @@ typeSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders.function",
     "l": "Calculation"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.builders",
-    "l": "CalculationBuilder"
+}, {"p": "com.ericlam.mc.bungee.hnmc.builders", "l": "CalculationBuilder"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "l": "ChatFormatManager"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders.function",
     "l": "ChatRunner"
@@ -65,6 +65,9 @@ typeSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "l": "Perm"
 }, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "PlayerManager"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.events",
+    "l": "PlayerVerifyCompletedEvent"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "l": "SQLDataSource"
 }, {"p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional", "l": "TabCompleter"}]
