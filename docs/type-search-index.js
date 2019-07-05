@@ -70,7 +70,7 @@ typeSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.events",
     "l": "PlayerVerifyCompletedEvent"
-}, {
+}, {"p": "com.ericlam.mc.bungee.hnmc.function", "l": "ResultParser"}, {
     "p": "com.ericlam.mc.bungee.hnmc.exceptions",
     "l": "SkinUpdateTooFastException"
 }, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "SkinValueManager"}, {

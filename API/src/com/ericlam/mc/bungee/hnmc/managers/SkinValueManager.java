@@ -30,4 +30,12 @@ public interface SkinValueManager {
      */
     CompletableFuture<PlayerSkin> getOrSaveSkinForPlayer(UUID uuid, String name);
 
+    /**
+     * 刪除玩家皮膚資料
+     *
+     * @param uuid 玩家UUID
+     * @return 是否存在
+     */
+    CompletableFuture<Boolean> dropSkin(UUID uuid);
+
 }

@@ -8,6 +8,7 @@ com.ericlam.mc.bungee.hnmc.config
 com.ericlam.mc.bungee.hnmc.container
 com.ericlam.mc.bungee.hnmc.events
 com.ericlam.mc.bungee.hnmc.exceptions
+com.ericlam.mc.bungee.hnmc.function
 com.ericlam.mc.bungee.hnmc.main
 com.ericlam.mc.bungee.hnmc.managers
 com.ericlam.mc.bungee.hnmc.permission

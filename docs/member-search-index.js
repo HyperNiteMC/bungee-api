@@ -105,6 +105,11 @@ memberSearchIndex = [{
     "l": "CalculationBuilder(double)",
     "url": "%3Cinit%3E(double)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.function",
+    "c": "ResultParser",
+    "l": "check(Supplier<Boolean>)",
+    "url": "check(java.util.function.Supplier)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "DefaultCommandBuilder",
     "l": "children(CommandNode...)",
@@ -178,6 +183,11 @@ memberSearchIndex = [{
     "l": "doOther(Calculation)",
     "url": "doOther(com.ericlam.mc.bungee.hnmc.builders.function.Calculation)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "dropSkin(UUID)",
+    "url": "dropSkin(java.util.UUID)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "AdvCommandNodeBuilder",
     "l": "execute(AdvCmdExecutor<Sender>)",
@@ -187,6 +197,11 @@ memberSearchIndex = [{
     "c": "CommandNodeBuilder",
     "l": "execute(CmdExecutor)",
     "url": "execute(com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.CmdExecutor)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.function",
+    "c": "ResultParser",
+    "l": "execute(Consumer<Boolean>)",
+    "url": "execute(java.util.function.Consumer)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional",
     "c": "AdvCmdExecutor",
@@ -422,6 +437,10 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "getResult()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.function",
+    "c": "ResultParser",
+    "l": "getResult()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "getSkinValueManager()"
@@ -477,6 +496,16 @@ memberSearchIndex = [{
     "c": "HyperNiteMC",
     "l": "HyperNiteMC()",
     "url": "%3Cinit%3E()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.function",
+    "c": "ResultParser",
+    "l": "ifFalse(Runnable)",
+    "url": "ifFalse(java.lang.Runnable)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.function",
+    "c": "ResultParser",
+    "l": "ifTrue(Runnable)",
+    "url": "ifTrue(java.lang.Runnable)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
