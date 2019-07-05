@@ -65,9 +65,15 @@ typeSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "l": "Perm"
 }, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "PlayerManager"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "l": "PlayerSkin"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.events",
     "l": "PlayerVerifyCompletedEvent"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.exceptions",
+    "l": "SkinUpdateTooFastException"
+}, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "SkinValueManager"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "l": "SQLDataSource"
 }, {"p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional", "l": "TabCompleter"}]

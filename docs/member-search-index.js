@@ -356,6 +356,16 @@ memberSearchIndex = [{
     "l": "getOfflinePlayer(UUID)",
     "url": "getOfflinePlayer(java.util.UUID)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "getOrSaveSkinForPlayer(UUID, String)",
+    "url": "getOrSaveSkinForPlayer(java.util.UUID,java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "getOrSaveSkinForPlayer(UUID)",
+    "url": "getOrSaveSkinForPlayer(java.util.UUID)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getParent()"
@@ -414,6 +424,14 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
+    "l": "getSkinValueManager()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.main",
+    "c": "HyperNiteMC",
+    "l": "getSkinValueManager()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc",
+    "c": "HyperNiteAPI",
     "l": "getSQLDataSource()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.main",
@@ -430,8 +448,16 @@ memberSearchIndex = [{
     "url": "getSuffix(net.md_5.bungee.api.connection.ProxiedPlayer)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "PlayerSkin",
+    "l": "getTimestamp()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
     "c": "OfflinePlayer",
     "l": "getUniqueId()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "PlayerSkin",
+    "l": "getValue()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
@@ -473,6 +499,10 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.container",
     "c": "OfflinePlayer",
+    "l": "isPremium()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "PlayerSkin",
     "l": "isPremium()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.container",
@@ -687,10 +717,20 @@ memberSearchIndex = [{
     "l": "setMsgConfig(String)",
     "url": "setMsgConfig(java.lang.String)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.events",
+    "c": "PlayerVerifyCompletedEvent",
+    "l": "setOfflinePlayer(OfflinePlayer)",
+    "url": "setOfflinePlayer(com.ericlam.mc.bungee.hnmc.container.OfflinePlayer)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
     "l": "showAdvancement(String)",
     "url": "showAdvancement(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.exceptions",
+    "c": "SkinUpdateTooFastException",
+    "l": "SkinUpdateTooFastException(String)",
+    "url": "%3Cinit%3E(java.lang.String)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",
@@ -715,6 +755,15 @@ memberSearchIndex = [{
     "c": "CommandNodeBuilder",
     "l": "tabComplete(TabCompleter)",
     "url": "tabComplete(com.ericlam.mc.bungee.hnmc.commands.caxerx.functional.TabCompleter)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "ChatFormatManager",
+    "l": "updateChatformatTask()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "updateSkin(UUID)",
+    "url": "updateSkin(java.util.UUID)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
