@@ -9,6 +9,7 @@ import com.ericlam.mc.bungee.hnmc.config.ConfigSetter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.managers.ChatFormatManager;
 import com.ericlam.mc.bungee.hnmc.managers.PlayerManager;
+import com.ericlam.mc.bungee.hnmc.managers.SkinValueManager;
 
 /**
  * 從這裏獲取所有 API
@@ -51,6 +52,11 @@ public class HyperNiteMC implements HyperNiteAPI {
 
     @Override
     public ConfigManager registerConfig(ConfigSetter setter) {
+        throw new RuntimeException("RUNTIME ERROR");
+    }
+
+    @Override
+    public SkinValueManager getSkinValueManager() {
         throw new RuntimeException("RUNTIME ERROR");
     }
 }

@@ -19,4 +19,9 @@ public class PlayerVerifyCompletedEvent extends Event {
     public OfflinePlayer getOfflinePlayer() {
         return offlinePlayer;
     }
+
+
+    public void setOfflinePlayer(OfflinePlayer offlinePlayer) {
+        this.offlinePlayer = offlinePlayer;
+    }
 }
