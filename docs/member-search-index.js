@@ -72,6 +72,11 @@ memberSearchIndex = [{
     "l": "alias(String...)",
     "url": "alias(java.lang.String...)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "applySkin(ProxiedPlayer, String)",
+    "url": "applySkin(net.md_5.bungee.api.connection.ProxiedPlayer,java.lang.String)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "AdvMessageBuilder",
     "l": "build()"
