@@ -122,7 +122,9 @@ public abstract class CommandNode {
             if (permission == null || Perm.hasPermission(sender, permission)) {
                 if (this.getPlaceholder() != null) {
                     String[] placeholders = Arrays.stream(this.getPlaceholder().split(" ")).filter(holder -> holder.startsWith("<") && holder.endsWith(">")).toArray(String[]::new);
-                    throw new CommandArgumentException(String.join(" ", placeholders));
+                    if (placeholders.length > 0) {
+                        throw new CommandArgumentException(String.join(" ", placeholders));
+                    }
                 }
                 executeCommand(sender, args);
                 return;
