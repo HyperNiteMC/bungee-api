@@ -593,6 +593,10 @@ memberSearchIndex = [{
     "l": "NotExecutableException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.permission",
+    "c": "Perm",
+    "l": "OWNER"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
     "l": "page(String)",
