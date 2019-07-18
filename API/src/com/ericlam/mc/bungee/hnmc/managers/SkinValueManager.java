@@ -3,6 +3,7 @@ package com.ericlam.mc.bungee.hnmc.managers;
 import com.ericlam.mc.bungee.hnmc.container.PlayerSkin;
 import com.ericlam.mc.bungee.hnmc.exceptions.SkinUpdateTooFastException;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
+import net.md_5.bungee.connection.LoginResult;
 
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
@@ -47,5 +48,15 @@ public interface SkinValueManager {
      * @param value  base64 皮膚
      */
     void applySkin(final ProxiedPlayer player, final String value);
+
+
+    /**
+     * 修改玩家 Profile
+     *
+     * @param result 登入 Profile
+     * @param value  base64 皮膚
+     * @return 登入 Profile
+     */
+    LoginResult editResult(final LoginResult result, final String value);
 
 }

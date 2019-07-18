@@ -193,6 +193,11 @@ memberSearchIndex = [{
     "l": "dropSkin(UUID)",
     "url": "dropSkin(java.util.UUID)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.managers",
+    "c": "SkinValueManager",
+    "l": "editResult(LoginResult, String)",
+    "url": "editResult(net.md_5.bungee.connection.LoginResult,java.lang.String)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "AdvCommandNodeBuilder",
     "l": "execute(AdvCmdExecutor<Sender>)",
@@ -653,8 +658,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.events",
     "c": "PlayerVerifyCompletedEvent",
-    "l": "PlayerVerifyCompletedEvent(OfflinePlayer)",
-    "url": "%3Cinit%3E(com.ericlam.mc.bungee.hnmc.container.OfflinePlayer)"
+    "l": "PlayerVerifyCompletedEvent(OfflinePlayer, Callback<PlayerVerifyCompletedEvent>)",
+    "url": "%3Cinit%3E(com.ericlam.mc.bungee.hnmc.container.OfflinePlayer,net.md_5.bungee.api.Callback)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",
