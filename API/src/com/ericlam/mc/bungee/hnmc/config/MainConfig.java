@@ -14,6 +14,12 @@ public interface MainConfig {
 
     void reloadConfig();
 
+    /**
+     * @return 獲取資料庫文件
+     * @deprecated 即將過期
+     */
+    @Deprecated
     Configuration getDatabase();
 
+    RedisData getRedisData();
 }
