@@ -332,7 +332,7 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getDescription()"
-}, {
+}, {"p": "com.ericlam.mc.bungee.hnmc.config", "c": "RedisData", "l": "getHost()"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
     "l": "getMainConfig()"
@@ -395,6 +395,10 @@ memberSearchIndex = [{
     "c": "CommandNode",
     "l": "getParent()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "RedisData",
+    "l": "getPassword()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
     "l": "getPermHierarchy(String)",
@@ -425,6 +429,10 @@ memberSearchIndex = [{
     "l": "getPlugin()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "RedisData",
+    "l": "getPort()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "MainConfig",
     "l": "getPrefix()"
 }, {
@@ -442,6 +450,10 @@ memberSearchIndex = [{
     "c": "ConfigManager",
     "l": "getPureMessage(String)",
     "url": "getPureMessage(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "MainConfig",
+    "l": "getRedisData()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",
@@ -475,6 +487,10 @@ memberSearchIndex = [{
     "c": "ChatFormatManager",
     "l": "getSuffix(ProxiedPlayer)",
     "url": "getSuffix(net.md_5.bungee.api.connection.ProxiedPlayer)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "RedisData",
+    "l": "getTimeout()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.container",
     "c": "PlayerSkin",
@@ -812,4 +828,4 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
-}]
+}, {"p": "com.ericlam.mc.bungee.hnmc.config", "c": "RedisData", "l": "usePassword()"}]

@@ -21,5 +21,8 @@ public interface MainConfig {
     @Deprecated
     Configuration getDatabase();
 
+    /**
+     * @return Redis 資料
+     */
     RedisData getRedisData();
 }
