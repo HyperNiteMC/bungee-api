@@ -11,6 +11,9 @@ typeSearchIndex = [{
     "l": "All Classes",
     "url": "allclasses-index.html"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "l": "BungeeConfiguration"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders.function",
     "l": "Calculation"
 }, {"p": "com.ericlam.mc.bungee.hnmc.builders", "l": "CalculationBuilder"}, {
@@ -40,6 +43,9 @@ typeSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "l": "CommandRegister"
+}, {"p": "com.ericlam.mc.bungee.hnmc.config", "l": "Component"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "l": "ConfigFactory"
 }, {"p": "com.ericlam.mc.bungee.hnmc.config", "l": "ConfigManager"}, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "l": "ConfigSetter"
@@ -55,9 +61,9 @@ typeSearchIndex = [{
 }, {"p": "com.ericlam.mc.bungee.hnmc.main", "l": "HyperNiteMC"}, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "l": "MainConfig"
-}, {
-    "p": "com.ericlam.mc.bungee.hnmc.builders",
-    "l": "MessageBuilder"
+}, {"p": "com.ericlam.mc.bungee.hnmc.builders", "l": "MessageBuilder"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "l": "MessageConfiguration"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.exception",
     "l": "NotExecutableException"
@@ -70,7 +76,13 @@ typeSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.events",
     "l": "PlayerVerifyCompletedEvent"
-}, {"p": "com.ericlam.mc.bungee.hnmc.config", "l": "RedisData"}, {
+}, {"p": "com.ericlam.mc.bungee.hnmc.config.yaml", "l": "Prefix"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "l": "Prefixed"
+}, {"p": "com.ericlam.mc.bungee.hnmc.config", "l": "Prop"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "l": "RedisData"
+}, {"p": "com.ericlam.mc.bungee.hnmc.config.yaml", "l": "Resource"}, {
     "p": "com.ericlam.mc.bungee.hnmc.function",
     "l": "ResultParser"
 }, {
@@ -79,4 +91,10 @@ typeSearchIndex = [{
 }, {"p": "com.ericlam.mc.bungee.hnmc.managers", "l": "SkinValueManager"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "l": "SQLDataSource"
-}, {"p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional", "l": "TabCompleter"}]
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx.functional",
+    "l": "TabCompleter"
+}, {"p": "com.ericlam.mc.bungee.hnmc.config.yaml", "l": "UnPrefixed"}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "l": "BungeeConfiguration.Validate"
+}, {"p": "com.ericlam.mc.bungee.hnmc.config", "l": "YamlManager"}]

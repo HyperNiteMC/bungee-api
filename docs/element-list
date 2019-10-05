@@ -5,6 +5,7 @@ com.ericlam.mc.bungee.hnmc.commands.caxerx
 com.ericlam.mc.bungee.hnmc.commands.caxerx.exception
 com.ericlam.mc.bungee.hnmc.commands.caxerx.functional
 com.ericlam.mc.bungee.hnmc.config
+com.ericlam.mc.bungee.hnmc.config.yaml
 com.ericlam.mc.bungee.hnmc.container
 com.ericlam.mc.bungee.hnmc.events
 com.ericlam.mc.bungee.hnmc.exceptions

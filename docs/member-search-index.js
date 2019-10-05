@@ -101,6 +101,11 @@ memberSearchIndex = [{
     "c": "Perm",
     "l": "BUILDER"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "BungeeConfiguration",
+    "l": "BungeeConfiguration()",
+    "url": "%3Cinit%3E()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders.function",
     "c": "Calculation",
     "l": "cal(double)"
@@ -192,6 +197,10 @@ memberSearchIndex = [{
     "c": "SkinValueManager",
     "l": "dropSkin(UUID)",
     "url": "dropSkin(java.util.UUID)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "ConfigFactory",
+    "l": "dump()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.managers",
     "c": "SkinValueManager",
@@ -290,12 +299,36 @@ memberSearchIndex = [{
     "url": "getConfig(java.lang.String)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "getConfig(String)",
+    "url": "getConfig(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "getConfigAs(Class<T>)",
+    "url": "getConfigAs(java.lang.Class)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc",
+    "c": "HyperNiteAPI",
+    "l": "getConfigFactory(Plugin)",
+    "url": "getConfigFactory(net.md_5.bungee.api.plugin.Plugin)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.main",
+    "c": "HyperNiteMC",
+    "l": "getConfigFactory(Plugin)",
+    "url": "getConfigFactory(net.md_5.bungee.api.plugin.Plugin)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigSetter",
     "l": "getConfigs()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigManager",
     "l": "getConfigSetter()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "BungeeConfiguration",
+    "l": "getConfiguration()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "SQLDataSource",
@@ -332,6 +365,16 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "getDescription()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "getFileConfig(Class<? extends BungeeConfiguration>)",
+    "url": "getFileConfig(java.lang.Class)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "getFileConfig(String)",
+    "url": "getFileConfig(java.lang.String)"
 }, {"p": "com.ericlam.mc.bungee.hnmc.config", "c": "RedisData", "l": "getHost()"}, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
@@ -343,6 +386,11 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigManager",
+    "l": "getMessage(String)",
+    "url": "getMessage(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
     "l": "getMessage(String)",
     "url": "getMessage(java.lang.String)"
 }, {
@@ -436,6 +484,10 @@ memberSearchIndex = [{
     "c": "MainConfig",
     "l": "getPrefix()"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "getPrefix()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.managers",
     "c": "ChatFormatManager",
     "l": "getPrefix(ProxiedPlayer)",
@@ -448,6 +500,11 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigManager",
+    "l": "getPureMessage(String)",
+    "url": "getPureMessage(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
     "l": "getPureMessage(String)",
     "url": "getPureMessage(java.lang.String)"
 }, {
@@ -569,6 +626,10 @@ memberSearchIndex = [{
     "l": "loadConfig(HashMap<String, Configuration>)",
     "url": "loadConfig(java.util.HashMap)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "Resource",
+    "l": "locate()"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "CommandNode",
     "l": "match(String)",
@@ -588,6 +649,11 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "MessageBuilder(String)",
     "url": "%3Cinit%3E(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "MessageConfiguration",
+    "l": "MessageConfiguration()",
+    "url": "%3Cinit%3E()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",
@@ -614,6 +680,11 @@ memberSearchIndex = [{
     "l": "NotExecutableException(String)",
     "url": "%3Cinit%3E(java.lang.String)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "BungeeConfiguration.Validate",
+    "l": "notNull(Object, String)",
+    "url": "notNull(java.lang.Object,java.lang.String)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
     "l": "OWNER"
@@ -637,6 +708,14 @@ memberSearchIndex = [{
     "c": "DefaultCommandBuilder",
     "l": "parent(CommandNode)",
     "url": "parent(com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandNode)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "Prop",
+    "l": "path()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "Prefix",
+    "l": "path()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.permission",
     "c": "Perm",
@@ -681,6 +760,11 @@ memberSearchIndex = [{
     "c": "CalculationBuilder",
     "l": "pow(double)"
 }, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "ConfigFactory",
+    "l": "register(String, Class<? extends BungeeConfiguration>)",
+    "url": "register(java.lang.String,java.lang.Class)"
+}, {
     "p": "com.ericlam.mc.bungee.hnmc.builders.function",
     "c": "ChatRunnerManager",
     "l": "registerClicks(UUID, ChatRunner, int)",
@@ -715,9 +799,23 @@ memberSearchIndex = [{
     "l": "reloadConfig()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "reloadConfig(Class<T>)",
+    "url": "reloadConfig(java.lang.Class)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
     "c": "ConfigManager",
     "l": "reloadConfig(String)",
     "url": "reloadConfig(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "reloadConfig(String)",
+    "url": "reloadConfig(java.lang.String)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "YamlManager",
+    "l": "reloadConfigs()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "CalculationBuilder",
@@ -750,6 +848,10 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "runTimeout(int, ChatRunner)",
     "url": "runTimeout(int,com.ericlam.mc.bungee.hnmc.builders.function.ChatRunner)"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "BungeeConfiguration",
+    "l": "save()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "MessageBuilder",
@@ -828,4 +930,13 @@ memberSearchIndex = [{
     "c": "MessageBuilder",
     "l": "url(String)",
     "url": "url(java.lang.String)"
-}, {"p": "com.ericlam.mc.bungee.hnmc.config", "c": "RedisData", "l": "usePassword()"}]
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config",
+    "c": "RedisData",
+    "l": "usePassword()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.config.yaml",
+    "c": "BungeeConfiguration.Validate",
+    "l": "Validate()",
+    "url": "%3Cinit%3E()"
+}]
