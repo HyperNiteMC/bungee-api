@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+@Deprecated
 public abstract class ConfigSetter {
 
     private Plugin plugin;

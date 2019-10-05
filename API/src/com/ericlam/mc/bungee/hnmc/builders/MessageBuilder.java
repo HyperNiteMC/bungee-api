@@ -218,7 +218,7 @@ public class MessageBuilder {
      */
     public BaseComponent[] build() {
         if (this.runner != null) {
-            this.command("/command-run_" + id.toString());
+            this.command("/command-run-bungee_" + id.toString());
             if (timeoutSeconds > 0) {
                 HyperNiteMC.getAPI().getChatRunnerManager().registerTimeout(id, runner, timeoutSeconds);
             } else if (timeoutClicks > 0) {

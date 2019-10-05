@@ -7,8 +7,10 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
+ * @deprecated
  * 指令管理器
  */
+@Deprecated
 public interface ConfigManager {
 
     /**

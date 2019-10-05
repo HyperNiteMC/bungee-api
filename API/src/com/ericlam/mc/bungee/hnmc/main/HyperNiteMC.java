@@ -4,12 +4,16 @@ import com.ericlam.mc.bungee.hnmc.HyperNiteAPI;
 import com.ericlam.mc.bungee.hnmc.SQLDataSource;
 import com.ericlam.mc.bungee.hnmc.builders.function.ChatRunnerManager;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister;
+import com.ericlam.mc.bungee.hnmc.config.ConfigFactory;
 import com.ericlam.mc.bungee.hnmc.config.ConfigManager;
 import com.ericlam.mc.bungee.hnmc.config.ConfigSetter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.managers.ChatFormatManager;
 import com.ericlam.mc.bungee.hnmc.managers.PlayerManager;
 import com.ericlam.mc.bungee.hnmc.managers.SkinValueManager;
+import net.md_5.bungee.api.plugin.Plugin;
+
+import java.io.IOException;
 
 /**
  * 從這裏獲取所有 API
@@ -20,43 +24,49 @@ public class HyperNiteMC implements HyperNiteAPI {
         throw new RuntimeException("RUNTIME ERROR");
     }
 
+
     @Override
     public SQLDataSource getSQLDataSource() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 
     @Override
     public ChatRunnerManager getChatRunnerManager() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 
     @Override
     public CommandRegister getCommandRegister() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 
     @Override
     public MainConfig getMainConfig() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
+    }
+
+    @Override
+    public ConfigFactory getConfigFactory(Plugin plugin) {
+        return null;
     }
 
     @Override
     public ChatFormatManager getChatFormatManager() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 
     @Override
     public PlayerManager getPlayerManager() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 
     @Override
-    public ConfigManager registerConfig(ConfigSetter setter) {
-        throw new RuntimeException("RUNTIME ERROR");
+    public ConfigManager registerConfig(ConfigSetter setter) throws IOException {
+        return null;
     }
 
     @Override
     public SkinValueManager getSkinValueManager() {
-        throw new RuntimeException("RUNTIME ERROR");
+        return null;
     }
 }
