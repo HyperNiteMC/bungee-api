@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HyperNiteMC-Bungee2">
+    <output-path>W:/Minecraft/2019/bungee/plugins</output-path>
+    <root id="archive" name="HyperNiteMC-Bungee.jar">
+      <element id="module-output" name="Plugin" />
+      <element id="module-output" name="API" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/guice-4.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/HikariCP-3.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/commons-pool2-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/jedis-3.1.0-m1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/slf4j-api.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Libraries/others/javax.inject.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

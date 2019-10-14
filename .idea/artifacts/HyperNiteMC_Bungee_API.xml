@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HyperNiteMC-Bungee-API">
+    <output-path>$PROJECT_DIR$/../../../Libraries/plugins</output-path>
+    <root id="archive" name="HyperNite-Bungee-API.jar">
+      <element id="module-output" name="API" />
+    </root>
+  </artifact>
+</component>
