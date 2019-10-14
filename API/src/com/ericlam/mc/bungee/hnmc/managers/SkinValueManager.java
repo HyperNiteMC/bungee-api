@@ -45,18 +45,18 @@ public interface SkinValueManager {
      * 設置玩家皮膚
      *
      * @param player 玩家
-     * @param value  base64 皮膚
+     * @param skin  皮膚設置
      */
-    void applySkin(final ProxiedPlayer player, final String value);
+    void applySkin(final ProxiedPlayer player, final PlayerSkin skin);
 
 
     /**
      * 修改玩家 Profile
      *
      * @param result 登入 Profile
-     * @param value  base64 皮膚
+     * @param skin 皮膚設置
      * @return 登入 Profile
      */
-    LoginResult editResult(final LoginResult result, final String value);
+    LoginResult editResult(final LoginResult result, final PlayerSkin skin);
 
 }

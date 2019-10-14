@@ -1,0 +1,5 @@
+name: HyperNiteMC-Bungee
+main: com.ericlam.mc.bungee.hnmc.main.HyperNiteMC
+version: 2.5.7
+author: Hydranapse_
+depends: [LuckPerms]

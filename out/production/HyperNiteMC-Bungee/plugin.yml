@@ -1,0 +1,13 @@
+name: HyperNiteMC-Bungee
+main: com.ericlam.mc.bungee.hnmc.main.HyperNiteMC
+version: 1.2.0
+api-version: "1.13"
+author: Hydranapse_
+depends: [LuckPerms]
+commands:
+  joinme:
+    description: joinme command
+  hub:
+    description: hub command
+  ping:
+    description: ping command

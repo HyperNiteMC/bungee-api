@@ -15,4 +15,9 @@ public interface PlayerSkin {
      * @return 是否為正版皮膚
      */
     boolean isPremium();
+
+    /**
+     * @return base64 代碼
+     */
+    String getSignature();
 }

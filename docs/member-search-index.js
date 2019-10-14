@@ -74,8 +74,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.managers",
     "c": "SkinValueManager",
-    "l": "applySkin(ProxiedPlayer, String)",
-    "url": "applySkin(net.md_5.bungee.api.connection.ProxiedPlayer,java.lang.String)"
+    "l": "applySkin(ProxiedPlayer, PlayerSkin)",
+    "url": "applySkin(net.md_5.bungee.api.connection.ProxiedPlayer,com.ericlam.mc.bungee.hnmc.container.PlayerSkin)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.builders",
     "c": "AdvMessageBuilder",
@@ -204,8 +204,8 @@ memberSearchIndex = [{
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.managers",
     "c": "SkinValueManager",
-    "l": "editResult(LoginResult, String)",
-    "url": "editResult(net.md_5.bungee.connection.LoginResult,java.lang.String)"
+    "l": "editResult(LoginResult, PlayerSkin)",
+    "url": "editResult(net.md_5.bungee.connection.LoginResult,com.ericlam.mc.bungee.hnmc.container.PlayerSkin)"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc.commands.caxerx",
     "c": "AdvCommandNodeBuilder",
@@ -519,6 +519,10 @@ memberSearchIndex = [{
     "p": "com.ericlam.mc.bungee.hnmc.function",
     "c": "ResultParser",
     "l": "getResult()"
+}, {
+    "p": "com.ericlam.mc.bungee.hnmc.container",
+    "c": "PlayerSkin",
+    "l": "getSignature()"
 }, {
     "p": "com.ericlam.mc.bungee.hnmc",
     "c": "HyperNiteAPI",
