@@ -1,19 +1,16 @@
 package com.ericlam.mc.bungee.hnmc.main;
 
 import com.ericlam.mc.bungee.hnmc.HyperNiteAPI;
+import com.ericlam.mc.bungee.hnmc.RedisDataSource;
 import com.ericlam.mc.bungee.hnmc.SQLDataSource;
 import com.ericlam.mc.bungee.hnmc.builders.function.ChatRunnerManager;
 import com.ericlam.mc.bungee.hnmc.commands.caxerx.CommandRegister;
 import com.ericlam.mc.bungee.hnmc.config.ConfigFactory;
-import com.ericlam.mc.bungee.hnmc.config.ConfigManager;
-import com.ericlam.mc.bungee.hnmc.config.ConfigSetter;
 import com.ericlam.mc.bungee.hnmc.config.MainConfig;
 import com.ericlam.mc.bungee.hnmc.managers.ChatFormatManager;
 import com.ericlam.mc.bungee.hnmc.managers.PlayerManager;
 import com.ericlam.mc.bungee.hnmc.managers.SkinValueManager;
 import net.md_5.bungee.api.plugin.Plugin;
-
-import java.io.IOException;
 
 /**
  * 從這裏獲取所有 API
@@ -27,6 +24,11 @@ public class HyperNiteMC implements HyperNiteAPI {
 
     @Override
     public SQLDataSource getSQLDataSource() {
+        return null;
+    }
+
+    @Override
+    public RedisDataSource getRedisDataSource() {
         return null;
     }
 
@@ -57,11 +59,6 @@ public class HyperNiteMC implements HyperNiteAPI {
 
     @Override
     public PlayerManager getPlayerManager() {
-        return null;
-    }
-
-    @Override
-    public ConfigManager registerConfig(ConfigSetter setter) throws IOException {
         return null;
     }
 
