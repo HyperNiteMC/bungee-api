@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>API</module>
+        <module>bungee-api</module>
         <module>Plugin</module>
     </modules>
 
