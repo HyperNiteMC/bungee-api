@@ -61,26 +61,26 @@
 ----------------------------------*/
 .ui-state-disabled {
 	cursor: default !important;
-    pointer-events: none;
+	pointer-events: none;
 }
 
 
 /* Icons
 ----------------------------------*/
 .ui-icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -.25em;
-    position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -.25em;
+	position: relative;
 	text-indent: -99999px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
 
 .ui-widget-icon-block {
-    left: 50%;
-    margin-left: -8px;
-    display: block;
+	left: 50%;
+	margin-left: -8px;
+	display: block;
 }
 
 /* Misc visuals
@@ -105,7 +105,7 @@
 	padding: 0;
 	margin: 0;
 	display: block;
-    outline: 0;
+	outline: 0;
 }
 .ui-menu .ui-menu {
 	position: absolute;
@@ -117,8 +117,8 @@
 	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
 .ui-menu .ui-menu-item-wrapper {
-    position: relative;
-    padding: 3px 1em 3px .4em;
+	position: relative;
+	padding: 3px 1em 3px .4em;
 }
 .ui-menu .ui-menu-divider {
 	margin: 5px 0;
