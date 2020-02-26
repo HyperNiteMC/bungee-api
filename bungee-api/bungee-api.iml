@@ -19,6 +19,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: redis.clients:jedis:3.1.0-m3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: waterfall:1.15:323" level="project" />
   </component>
