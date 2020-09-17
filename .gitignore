@@ -1,2 +1,4 @@
 /Plugin/*
 /.idea/*
+/out/*
+/bungee-api/target
