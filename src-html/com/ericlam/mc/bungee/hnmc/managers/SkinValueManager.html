@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<main role="main">
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span><a id="line.1">package com.ericlam.mc.bungee.hnmc.managers;</a>
+<span class="sourceLineNo">002</span><a id="line.2"></a>
+<span class="sourceLineNo">003</span><a id="line.3">import com.ericlam.mc.bungee.hnmc.container.PlayerSkin;</a>
+<span class="sourceLineNo">004</span><a id="line.4">import com.ericlam.mc.bungee.hnmc.exceptions.SkinUpdateTooFastException;</a>
+<span class="sourceLineNo">005</span><a id="line.5">import net.md_5.bungee.api.connection.ProxiedPlayer;</a>
+<span class="sourceLineNo">006</span><a id="line.6">import net.md_5.bungee.connection.LoginResult;</a>
+<span class="sourceLineNo">007</span><a id="line.7"></a>
+<span class="sourceLineNo">008</span><a id="line.8">import java.util.UUID;</a>
+<span class="sourceLineNo">009</span><a id="line.9">import java.util.concurrent.CompletableFuture;</a>
+<span class="sourceLineNo">010</span><a id="line.10"></a>
+<span class="sourceLineNo">011</span><a id="line.11">public interface SkinValueManager {</a>
+<span class="sourceLineNo">012</span><a id="line.12"></a>
+<span class="sourceLineNo">013</span><a id="line.13">    /**</a>
+<span class="sourceLineNo">014</span><a id="line.14">     * 更新玩家皮膚</a>
+<span class="sourceLineNo">015</span><a id="line.15">     *</a>
+<span class="sourceLineNo">016</span><a id="line.16">     * @param uuid 玩家UUID</a>
+<span class="sourceLineNo">017</span><a id="line.17">     * @return 玩家皮膚</a>
+<span class="sourceLineNo">018</span><a id="line.18">     * @throws SkinUpdateTooFastException 距離上次更新不夠一日拋出</a>
+<span class="sourceLineNo">019</span><a id="line.19">     */</a>
+<span class="sourceLineNo">020</span><a id="line.20">    CompletableFuture&lt;PlayerSkin&gt; updateSkin(UUID uuid) throws SkinUpdateTooFastException;</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">    /**</a>
+<span class="sourceLineNo">023</span><a id="line.23">     * @param uuid 玩家UUID</a>
+<span class="sourceLineNo">024</span><a id="line.24">     * @return 玩家皮膚</a>
+<span class="sourceLineNo">025</span><a id="line.25">     */</a>
+<span class="sourceLineNo">026</span><a id="line.26">    CompletableFuture&lt;PlayerSkin&gt; getOrSaveSkinForPlayer(UUID uuid);</a>
+<span class="sourceLineNo">027</span><a id="line.27"></a>
+<span class="sourceLineNo">028</span><a id="line.28">    /**</a>
+<span class="sourceLineNo">029</span><a id="line.29">     * @param uuid 玩家UUID</a>
+<span class="sourceLineNo">030</span><a id="line.30">     * @param name 玩家名稱</a>
+<span class="sourceLineNo">031</span><a id="line.31">     * @return 玩家皮膚</a>
+<span class="sourceLineNo">032</span><a id="line.32">     */</a>
+<span class="sourceLineNo">033</span><a id="line.33">    CompletableFuture&lt;PlayerSkin&gt; getOrSaveSkinForPlayer(UUID uuid, String name);</a>
+<span class="sourceLineNo">034</span><a id="line.34"></a>
+<span class="sourceLineNo">035</span><a id="line.35">    /**</a>
+<span class="sourceLineNo">036</span><a id="line.36">     * 刪除玩家皮膚資料</a>
+<span class="sourceLineNo">037</span><a id="line.37">     *</a>
+<span class="sourceLineNo">038</span><a id="line.38">     * @param uuid 玩家UUID</a>
+<span class="sourceLineNo">039</span><a id="line.39">     * @return 是否存在</a>
+<span class="sourceLineNo">040</span><a id="line.40">     */</a>
+<span class="sourceLineNo">041</span><a id="line.41">    CompletableFuture&lt;Boolean&gt; dropSkin(UUID uuid);</a>
+<span class="sourceLineNo">042</span><a id="line.42"></a>
+<span class="sourceLineNo">043</span><a id="line.43"></a>
+<span class="sourceLineNo">044</span><a id="line.44">    /**</a>
+<span class="sourceLineNo">045</span><a id="line.45">     * 設置玩家皮膚</a>
+<span class="sourceLineNo">046</span><a id="line.46">     *</a>
+<span class="sourceLineNo">047</span><a id="line.47">     * @param player 玩家</a>
+<span class="sourceLineNo">048</span><a id="line.48">     * @param skin  皮膚設置</a>
+<span class="sourceLineNo">049</span><a id="line.49">     */</a>
+<span class="sourceLineNo">050</span><a id="line.50">    void applySkin(final ProxiedPlayer player, final PlayerSkin skin);</a>
+<span class="sourceLineNo">051</span><a id="line.51"></a>
+<span class="sourceLineNo">052</span><a id="line.52"></a>
+<span class="sourceLineNo">053</span><a id="line.53">    /**</a>
+<span class="sourceLineNo">054</span><a id="line.54">     * 修改玩家 Profile</a>
+<span class="sourceLineNo">055</span><a id="line.55">     *</a>
+<span class="sourceLineNo">056</span><a id="line.56">     * @param result 登入 Profile</a>
+<span class="sourceLineNo">057</span><a id="line.57">     * @param skin 皮膚設置</a>
+<span class="sourceLineNo">058</span><a id="line.58">     * @return 登入 Profile</a>
+<span class="sourceLineNo">059</span><a id="line.59">     */</a>
+<span class="sourceLineNo">060</span><a id="line.60">    LoginResult editResult(final LoginResult result, final PlayerSkin skin);</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">}</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</main>
+</body>
+</html>
